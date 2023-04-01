@@ -1,0 +1,99 @@
+.todo-app-container {
+  background-color: #303030;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.todo-app-container > h1:nth-child(1) {
+  text-align: center;
+  background-color: transparent;
+  color: #fff;
+  font-family: Ubuntu, sans-serif;
+}
+.todo-app {
+  width: 300px;
+  height: 400px;
+  background-color: #909090;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todo-app-top form {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  gap: 4px;
+}
+.todo-app-top input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0;
+  padding: 4px;
+  font-weight: bold;
+  color: #101010;
+  width: 100%;
+}
+.todo-app-top button {
+  border-radius: 10px;
+  padding: 4px 8px;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  font-weight: bold;
+  color: #101010;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.todo-app-top button:hover {
+  background-color: #9994;
+}
+
+.todo-app-bottom {
+  padding: 10px 0;
+  overflow: scroll;
+}
+
+.todo-app-bottom ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.todo {
+  background-color: #909090;
+  box-shadow: 0 0 2px #fff;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  margin: 0 6px;
+}
+.todo:hover {
+  box-shadow: 0 0 8px #fff;
+}
+.todo > span {
+  font-family: ubuntu, sans-serif;
+  display: flex;
+  overflow-x: scroll;
+  padding-right: 4px;
+}
+#delete-btn {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
